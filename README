@@ -1,0 +1,10 @@
+We made this full-stack project to learn and understand the basics of CURD operations using Angular, Spring Boot, and MySQL. In Spring Boot, we've created five packages that are associated with MySQL for creating tables under an assigned database. In Angular, we have created 11 components that are responsible for creating a font-end page for the project also made a way to communicate between the front-end and the back-end, that's how data fetching is performed.
+
+Team members:
+Akash
+Arshith Swaminath
+Charan.V
+Charan Krishan
+Giridharan
+Tharun Pranav
+Lalit Ghodki
