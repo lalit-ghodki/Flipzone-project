@@ -1,0 +1,25 @@
+<h2>Product List.</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Product Manufacturer</th>
+            <th>Product Quantity</th>
+            <th>Product Rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let product of products">
+            <td>{{product.id}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.productManufacturer}}</td>
+            <td>{{product.productQuantity}}</td>
+            <td>{{product.productRate}}</td>
+            <td>
+                <button (click)="updateProduct(product.id)" class="btn btn-info">Update</button>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>

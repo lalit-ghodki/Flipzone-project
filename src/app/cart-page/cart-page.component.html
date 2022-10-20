@@ -1,0 +1,121 @@
+<style>
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin: auto;
+text-align: center;
+font-family: arial;
+}
+
+.price {
+color: grey;
+font-size: 22px;
+}
+
+.card button {
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+
+.div{
+display: flex;
+}
+
+.card button:hover {
+opacity: 0.7;
+}
+
+  /*  */
+    .menu{
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+    }
+  
+    .btn-list{
+        margin-top: 20%;
+        list-style: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-list li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+  
+    .container{
+      background-color: rgb(241, 242, 249);
+      padding: 1%;
+      margin-top: 5%;
+      width: 40%;
+      border-radius: 5px;
+    }
+  </style>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Flipzone</a>
+    <div class="nav">
+        <a routerLink="/home" class="nav-item nav-link active">Home</a>
+        <!-- <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Pricing</a> -->
+    </div>
+    <div class="spacer"></div>
+    <img class="menu" src="assets/cart.png" alt="">
+  </nav>
+  <h4>Cart-page</h4>
+  <div class="cards" style="display: flex; ">
+    <div class="card">
+      <img src="../assets/golf.jpeg" alt="golf" style="width:100%">
+      <h3>Golf kit</h3>
+      <h6 class="price">$19.99</h6>
+      <p>Some text about the golf lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <div class="dev">
+        <button class="btn success">Cancel</button>
+      
+      </div>
+    </div>
+    <div class="card">
+      <img src="../assets/golf.jpeg" alt="golf" style="width:100%">
+      <h3>Golf kit</h3>
+      <h6 class="price">$19.99</h6>
+      <p>Some text about the golf lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <div class="dev">
+        <button class="btn success">Cancel</button>
+      
+      </div>
+    </div>
+    <div class="card">
+      <img src="../assets/golf.jpeg" alt="golf" style="width:100%">
+      <h3>Golf kit</h3>
+      <h6 class="price">$19.99</h6>
+      <p>Some text about the golf lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <div class="dev">
+        <button class="btn success">Cancel</button>
+      
+      </div>
+    </div>
+    <div class="card">
+      <img src="../assets/golf.jpeg" alt="golf" style="width:100%">
+      <h3>Golf kit</h3>
+      <h6 class="price">$19.99</h6>
+      <p>Some text about the golf lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+      <div class="dev">
+        <button class="btn success">Cancel</button>
+      
+      </div>
+    </div>
+  </div>
+  
+  

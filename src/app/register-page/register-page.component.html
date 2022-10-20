@@ -1,0 +1,79 @@
+<style>
+  .menu{
+      position: absolute;
+      right: 30px;
+      width: 30px;
+      height: 30px;
+  }
+
+  .btn-list{
+      margin-top: 20%;
+      list-style: none;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .btn-list li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+  }
+
+  .container{
+    background-color: rgb(241, 242, 249);
+    padding: 1%;
+    margin-top: 5%;
+    width: 40%;
+    border-radius: 5px;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Flipzone</a>
+  <div class="nav">
+    <a routerLink="/home" class="nav-item nav-link active">Home</a>
+      <!-- <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a> -->
+  </div>
+  <div class="spacer"></div>
+  <img class="menu" src="assets/cart.png" alt="">
+</nav>
+<div class="container">
+<form (ngSubmit)="registersubmit()">
+    <h4>Register</h4><hr>
+    <div class="form-group">
+      <label for="exampleInputName1">FullName</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name"
+      name="user_name"
+      [(ngModel)]="register.user_name">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
+      name="user_email"
+      [(ngModel)]="register.user_email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+      name="user_password"
+      [(ngModel)]="register.user_password">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputAddress1">Address</label>
+      <input type="text" class="form-control" id="exampleInputAddress1" placeholder="H.N. street, town, dist"
+      name="user_address"
+      [(ngModel)]="register.user_address">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputMobilenumber1">Number</label>
+      <input type="text" class="form-control" id="exampleInputAddress1" placeholder="+(91))"
+      name="user_mobilenumber"
+      [(ngModel)]="register.user_mobilenumber">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>

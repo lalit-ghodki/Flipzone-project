@@ -1,0 +1,108 @@
+
+<style>
+    .cards{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    .card img{
+        margin: 5px;
+        border-radius: 7px;
+        width: 96%;
+        
+    }
+
+    .menu{
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+    }
+  
+    .btn-list{
+        margin-top: 20%;
+        list-style: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-list li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+  
+    .container{
+      background-color: rgb(241, 242, 249);
+      padding: 1%;
+      margin-top: 5%;
+      width: 40%;
+      border-radius: 5px;
+    }
+  </style>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Flipzone</a>
+    <div class="nav">
+      <a routerLink="/home" class="nav-item nav-link active">Home</a>
+        <!-- <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Pricing</a> -->
+    </div>
+    <div class="spacer"></div>
+    <a routerLink="/cart" class="menu "><img routerLink="/cart" class="menu" src="assets/cart.png" alt=""></a>
+    
+  </nav>
+  <h4>Home page</h4>
+<div class="cards" style="display: flex; ">
+    <div style="margin-right: 20px;" class="card" style="width: 16rem;">
+        <img  class="card-img-top" src="assets/camp1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Camping Equipment</h5>
+          <p class="card-text">Umbrella, Tent, Shelters, Bags, Nets.... etc</p>
+          <a routerLink="/camping" class="btn btn-primary">See Products</a>
+          
+        </div>
+    </div>
+    <div style="padding: 20px;" class="card" style="width: 16rem;">
+        <img  class="card-img-top" src="assets/golf.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Golf Equipment</h5>
+          <p class="card-text">Cap, Balls, cones, nets, socs.... etc</p>
+          <a routerLink="/golf" class="btn btn-primary">See Products</a>
+        </div>
+    </div>
+    <div style="padding: 20px;" class="card" style="width: 16rem;">
+        <img  class="card-img-top" src="assets/mountain.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mountain Equipment</h5>
+          <p class="card-text">Jackets, gloves, Rope, shoes.... etc</p>
+          <a routerLink="/mountain" class="btn btn-primary">See Products</a>
+        </div>
+    </div>
+    <div style="padding: 20px;" class="card" style="width: 16rem;">
+        <img  class="card-img-top" src="assets/mask.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Outdoor Protection</h5>
+          <p class="card-text">Mask, lotion, hats, helmet, .... etc</p>
+          <a routerLink="/outdoor" class="btn btn-primary">See Products</a>
+        </div>
+    </div>
+    <div style="padding: 20px;" class="card" style="width: 16rem;">
+        <img  class="card-img-top" src="assets/wallet.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Personal accessories</h5>
+          <p class="card-text">Umbrella, Tent, Shelters, Bags, Nets.... etc</p>
+          <a routerLink="/accessory" class="btn btn-primary">See Products</a>
+        </div>
+    </div>
+</div>

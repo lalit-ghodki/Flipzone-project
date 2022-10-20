@@ -1,0 +1,135 @@
+
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+    .cards{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        width: 15%;
+        height: 300px;
+    }
+
+    .card img{
+        margin: 5px;
+        border-radius: 7px;
+        width: 95%;
+        
+    }
+
+    .menu{
+        position: absolute;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+    }
+  
+    .btn-list{
+        margin-top: 20%;
+        list-style: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-list li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+  
+    .container{
+      background-color: rgb(241, 242, 249);
+      padding: 1%;
+      margin-top: 5%;
+      width: 40%;
+      border-radius: 5px;
+    }
+  </style>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Flipzone</a>
+    <div class="nav">
+      <a routerLink="/home" class="nav-item nav-link active">Home</a>
+        <!-- <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Pricing</a> -->
+    </div>
+    <div class="spacer"></div>
+    <a routerLink="/cart" class="menu "><img routerLink="/cart" class="menu" src="assets/cart.png" alt=""></a>
+  </nav>
+
+  <h4>Camping Equipment</h4>
+  <div class="cards" style="display: flex; ">
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">Card title</h4>
+        <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+      </div>
+      <img src="assets/camp1.jpg" alt="Card image">
+      <div class="card-block">
+        <p class="card-text">20$</p>
+        <a routerLink="/cart" class="card-link">Buy Now</a>
+          <a routerLink="/cart" class="card-link">Add to cart</a>
+      </div>
+  </div>
+    <div class="card">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+        </div>
+        <img src="assets/camp1.jpg" alt="Card image">
+        <div class="card-block">
+          <p class="card-text">20$</p>
+          <a routerLink="/cart" class="card-link">Buy Now</a>
+          <a routerLink="/cart" class="card-link">Add to cart</a>
+        </div>
+    </div>
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">Card title</h4>
+        <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+      </div>
+      <img src="assets/camp1.jpg" alt="Card image">
+      <div class="card-block">
+        <p class="card-text">20$</p>
+        <a routerLink="/cart" class="card-link">Buy Now</a>
+          <a routerLink="/cart" class="card-link">Add to cart</a>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">Card title</h4>
+        <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+      </div>
+      <img src="assets/camp1.jpg" alt="Card image">
+      <div class="card-block">
+        <p class="card-text">20$</p>
+        <a routerLink="/cart" class="card-link">Buy Now</a>
+          <a routerLink="/cart" class="card-link">Add to cart</a>
+      </div>
+  </div>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+    </div>
+    <img src="assets/camp1.jpg" alt="Card image">
+    <div class="card-block">
+      <p class="card-text">20$</p>
+      <a routerLink="/cart" class="card-link">Buy Now</a>
+        <a routerLink="/cart" class="card-link">Add to cart</a>
+    </div>
+</div>
+    
+</div>
